@@ -9,6 +9,10 @@ data = [
     { "id":3, "name":"Jelly", "quantity":2 },
 ]
 
+@app.route('/readLogistics', methods=['GET'])
+def returnAll():
+    return jsonify({'data' : data})
+
 @app.route("/")
 def index():
     return "Hello World!"
