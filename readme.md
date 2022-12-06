@@ -4,8 +4,6 @@ Contents:
 - Retrieving the Data
 - Deleting the Data
 
-Make sure to use the '/readLogistics/' to retrieve the data from the...
-
 ## Retrieving the Data
 
 We have created an API that returns the necessary data from the Submissions team.
