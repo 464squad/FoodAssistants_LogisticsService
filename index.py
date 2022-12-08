@@ -1,7 +1,7 @@
 from flask import Flask  # import objects from flask model
 app = Flask(__name__)  # define app using flask
 
-from flask import jsonify
+from flask import jsonify, request
 
 data = [
     { "id":1, "name":"Bread", "quantity":5 },
@@ -12,6 +12,13 @@ data = [
 @app.route('/readLogistics', methods=['GET'])
 def returnAll():
     return jsonify({'data' : data})
+
+@app.route('/updateLogistics/<string:name>',methods=['GET','PUT'])
+def editOne(name):
+    datas = [names for names in data if names['name'] == name]
+    datas[0]['name'] = request.json['name']
+    return jsonify({'data' : datas[0]})
+
 
 @app.route("/")
 def index():
