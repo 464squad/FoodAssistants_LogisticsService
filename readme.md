@@ -9,11 +9,15 @@ Contents:
 ## Retrieving the Data
 
 We have created an API that returns the necessary data from the Submissions team.
-In order to retrieve the data from submission team, [Click here](../readLogistics), if you haven't entered the route already. 
+To retrieve the data from the submission team, [Click here](../readLogistics), if you haven't entered the route already. 
 
 ## Posting new data
+So, you have successfully retrieved data that already exists within the database. Now it is time to add new data, which we received from the Submission team. There exists two app route which makes posting new data easy. 
+By adding, /handle-submission, we can add new data to the database... 
+Also, ../lang, we are also able to create new data...
 
 ## Updating existing data
+Data to be entered...
 
 ## Deleting an entry
 
