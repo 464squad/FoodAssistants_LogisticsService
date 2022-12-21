@@ -37,9 +37,9 @@ user = User(username='newuser', email='newuser@example.com')
 db.session.add(user)
 db.session.commit()
 # This is a route that was in the tutorial. 
-    @app.route('/')
-    def index():
-        return "<h1 style='color:red'>hello flask</h1>"
+@app.route('/')
+def index():
+    return "<h1 style='color:red'>hello flask</h1>"
 # Other code to make the stuff work.
 if __name__ == "__main__":
     app.run(port=3000, debug=True) 
